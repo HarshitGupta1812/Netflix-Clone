@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title> Home | Netflix </title>
+        <script src="clone.js"> </script>
+        <link rel="stylesheet" href="clone.css" />
+    </head>
+    <body>
+        <div class="nav">
+            <div class="nav_left">
+                <img src="net logo.png" alt="" />
+            </div>
+            <div class="nav_right"> 
+                <img src="Netflix-avatar.png" class="nav_avatar" alt="" />
+            </div>
+        </div>
+        <header id="banner">
+            <div id="banner_contents">
+                <h1 id="banner_tittle"> </h1>
+                    <div id="banner_buttons">
+                        <button id="banner_button"> Play </button>
+                        <button id="banner_button"> My List </button>
+                    </div>
+                    <p id="banner_description"> </p>
+            </div>
+            <div id="banner_fadeBottom">  </div>
+        </header>
+        <div id="headrow">
+            <div class="row">
+                <h2 class="row_title"> </h2>
+                    <div class="row_posters"> </div>
+            </div>
+        </div>
+
+        <script>
+            window.addEventListener("scroll",function(){
+
+                var nav = document.querySelector(".nav");
+                nav.classList.toggle("active,window.scrollY > 0");
+            })
+        </script>
+
+    </body>
+</html>
